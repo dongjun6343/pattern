@@ -2,6 +2,22 @@ package org.study.pattern.template;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * 진정한 좋은 설계는 뭘까?
+ * 변경이 일어날때 자연스럽게 드러난다.
+ *
+ *
+ * 단일 책임 원칙 (SRP)
+ * 로그를 남기는 부분에 단일 책임 원칙을 지켰다.
+ *  => 변경 지점을 하나로 모아서 변경에 쉽게 대처할 수 있는 구조를 만든 것이다.
+ *
+ * 템플릿 메서드 패턴은 상속 구조를 사용하고 있어서 익명클래스나 익명 내부 클래스를 만들어야 하고,
+ * 자식 클래스 입장에서는 부모 클래스의 기능을 전혀 사용하지 않지만, 부모 클래스를 알아야한다(상속)
+ *
+ * 이러한 단점을 제거하기 위해 템플릿 메서드 패턴과 비슷한 역할을 하는 디자인 패턴이 전략 패턴이다.
+ */
+
+
 @Slf4j
 public class TemplateMethodMain {
 
@@ -71,5 +87,4 @@ public class TemplateMethodMain {
         };
         template2.execute();
     }
-
 }
