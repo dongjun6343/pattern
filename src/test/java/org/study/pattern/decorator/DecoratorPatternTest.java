@@ -3,6 +3,9 @@ package org.study.pattern.decorator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+/**
+ * 프록시를 적용하면(데코레이터 패턴을 사용하면) 기존 코드를 전혀 수정하지 않고 추가 기능을 도입할 수 있다.
+ */
 public class DecoratorPatternTest {
 
     @Test
